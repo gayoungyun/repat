@@ -5,22 +5,25 @@ import java.util.Scanner;
 public class quiz005 { //4조문제 //다시
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);
-		int num, num1, n, n1;
+		int num1, num2;
 		
-		System.out.println("두 수 입력 : ");
-		num = sc.nextInt();
+		System.out.println("첫번째 정수 입력 : ");
 		num1 = sc.nextInt();
+		System.out.println("두번째 정수 입력 : ");
+		num2 = sc.nextInt();
 		
-		if(num>num1) {
-			n 
+		int big, small;
+		if(num1>num2) {
+			big = num1;
+			small = num2;
+		}else {
+			big = num2;
+			small = num1;
 		}
 		
-		
-		for(int i = +num ; i<j ; i++) {
-			for(int j = +num1 ; j>0 ; j++)
-				System.out.println( num+, +num1 );
+		for(int i = small ; i<=big ; i++) {
+				System.out.println( i );
 		}
-		System.out.println();
 	}
 
 }

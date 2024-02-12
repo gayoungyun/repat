@@ -2,17 +2,20 @@ package for_;
 
 import java.util.Scanner;
 
-public class quiz003 { //5조문제 //홀수 합이 맞는지 모르겠다
+public class quiz003 { //5조문제 //답이 맞지 않은듯
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int num = 0, sum = 0;
+		int i, sum = 0;
 		
-		for(int i = 1 ; i <=10000 ; i++ ) { //int!!!
-			if(i%2 != 0) {
+		for(i = 1 ; sum <10000 ; i++ ) {
+			if(i%2 == 1) {
 				sum += i;
-				System.out.println("홀수 합 : "+sum);
 			}
+			i--;
+			System.out.println("마지마에 더해진 홀수 : "+i);
+			System.out.println("마지막에 더해진 합 : "+sum);
 		}
 	}
 
 }
+
